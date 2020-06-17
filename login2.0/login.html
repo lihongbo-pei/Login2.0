@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="default.css">
+</head>
+<body>
+<div class="page">
+
+    <div class="panel">
+        <div class="panel_visible">
+            <!--注册表单-->
+            <div class="panel_content">
+                <h1 class="panel_title">  Sign Up </h1>
+                <form class="form">
+                    <label class="form_label" for="username">Username</label>
+                    <input class="form_input" type="text" id="username" name="username">
+                    <label class="form_label" for="password">Password</label>
+                    <input class="form_input " type="password" id="password" name="password">
+                    <label class="form_label" for="truename">True Name</label>
+                    <input class="form_input" type="text" id="truename" name="fullname">
+                    <button class="form_btn" type="button" value="Submit">Submit</button>
+                    <button class="form_toggle js-formToggle" type="button">Or, Sign In</button>
+                </form>
+            </div>
+            <!--登录表单-->
+            <div class="panel_content panel_content-overlay js-panel_content ">
+                <h1 class="panel_title">  Sign In </h1>
+                <form class="form">
+                    <label class="form_label" for="usernameIn">Username</label>
+                    <input class="form_input" type="text" id="usernameIn" name="usernameIn">
+                    <label class="form_label" for="passwordIn">Password</label>
+                    <input class="form_input " type="password" id="passwordIn" name="passwordIn">
+                    <button class="form_btn" type="button" value="Submit">Sign In</button>
+                    <br>
+                    <button class="form_toggle js-formToggle" type="button">Or, Sign Up</button>
+                </form>
+            </div>
+        </div>
+        <div class="panel_back js-imageAnimate">
+            <img class="panel_img" src="login.jpg" />
+        </div>
+    </div>
+
+</div>
+<script src="main.js"></script>
+</body>
+</html>
